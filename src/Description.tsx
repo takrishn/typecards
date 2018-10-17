@@ -26,13 +26,23 @@ class Description extends React.Component<IProps, IState> {
   public render() {
     return (
       <div>
-        <div className="Boxed">
+        <a href="#nav"><div className="Boxed">
           <p>My favorite number is {this.state.count}</p>
           <button onClick={this.increase}>Increase</button>
+        </div></a>
+
+        <div className="Expandable" id="nav">
+          <div className="Boxed">
+            <p>Hello</p>
+          </div>
+          <div className="Boxed">
+            <p>World</p>
+          </div>
+          <div className="Boxed">
+            <p>!</p>
+          </div>
         </div>
-        <div className="Boxed">
-          <p>Hello</p>
-        </div>
+        
       </div>
     );
   }

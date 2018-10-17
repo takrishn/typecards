@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as $ from 'jquery';
 
 interface IProps {
   countBy?: number;
@@ -25,7 +26,7 @@ class Description extends React.Component<IProps, IState> {
 
   public render() {
     return (
-      <div>
+      <div className="Boxed">
         <p>My favorite number is {this.state.count}</p>
         <button onClick={this.increase}>Increase</button>
       </div>

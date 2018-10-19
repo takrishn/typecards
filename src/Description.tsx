@@ -1,45 +1,22 @@
 import * as React from 'react';
 
-interface IProps {
-  countBy?: number;
-}
-
-interface IState {
-  count: number;
-}
-
-class Description extends React.Component<IProps, IState> {
-  public static defaultProps: Partial<IProps> = {
-    countBy: 1,
-  };
-
-  public state: IState = {
-    count: 0,
-  };
-
-  public increase = () => {
-    const countBy: number = this.props.countBy!;
-    const count = this.state.count + countBy;
-    this.setState({ count });
-  };
-
+class Description extends React.Component {
   public render() {
     return (
       <div>
         <a href="#nav"><div className="Boxed">
-          <p>My favorite number is {this.state.count}</p>
-          <button onClick={this.increase}>Increase</button>
+          <p>Question</p>
         </div></a>
 
         <div className="Expandable" id="nav">
-          <div className="Boxed">
-            <p>Hello</p>
+          <div className="Boxed" id="ans1">
+            <p>You</p>
           </div>
-          <div className="Boxed">
-            <p>World</p>
+          <div className="Boxed" id="ans2">
+            <p>can</p>
           </div>
-          <div className="Boxed">
-            <p>!</p>
+          <div className="Boxed" id="ans3">
+            <p>read.</p>
           </div>
         </div>
         

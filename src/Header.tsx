@@ -5,11 +5,11 @@ interface IProps {
 }
 
 const Header: React.SFC<IProps> = (props: IProps) => (
-  <h1>Hello, {props.name}! Welcome.</h1>
+  <h3>{props.name}</h3>
 );
 
 Header.defaultProps = {
-  name: 'world',
+  name: 'deck',
 };
 
 export default Header;

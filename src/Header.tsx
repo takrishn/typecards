@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+// name is deck name
 interface IProps {
   name?: string;
 }

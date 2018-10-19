@@ -22,6 +22,7 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  white-space: nowrap;
 }
 
 .Sidenav a {
@@ -34,7 +35,7 @@ body {
 }
 
 .Sidenav a:hover {
-  color: #f1f1f1;
+  color: white;
 }
 
 .Closenav {
@@ -74,6 +75,45 @@ body {
   background-color: #222;
   height: 50px;
   padding: 0px;
+  color: white;
+}
+
+.App-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.App-footer p {
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 10px;
+}
+
+.Divider {
+  padding-left: 50px;
+  display: inline-block;
+}
+
+.Footerbutton {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.Footerbutton:hover {
+  background-color: #222;
   color: white;
 }
 

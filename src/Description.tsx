@@ -1,6 +1,11 @@
 import * as React from 'react';
 
+// these are the cards in the body
 class Description extends React.Component {
+
+  // animation for the answer cards to slide down
+  
+
   public render() {
     return (
       <div>
@@ -10,13 +15,15 @@ class Description extends React.Component {
 
         <div className="Expandable" id="nav">
           <div className="Boxed" id="ans1">
-            <p>You</p>
+            <p>Answer</p>
           </div>
+
           <div className="Boxed" id="ans2">
-            <p>can</p>
+            <p>Answer</p>
           </div>
+          
           <div className="Boxed" id="ans3">
-            <p>read.</p>
+            <p>Answer</p>
           </div>
         </div>
         

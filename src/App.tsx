@@ -1,32 +1,38 @@
 import * as React from 'react';
 import './App.css';
 import Description from './Description';
+import Footer from './Footer';
 import Header from './Header';
 
+
 class App extends React.Component {
+
+  // open side bar
   public openNav = () => {
-      const mySidenav: HTMLElement | null= document.getElementById("mySidenav"); 
-      if (mySidenav === null) {return};
-      
-      mySidenav.style.width = "250px";
+    const mySidenav: HTMLElement | null= document.getElementById("mySidenav"); 
+    if (mySidenav === null) {return};
+    
+    mySidenav.style.width = "250px";
   };
 
+  // close side bar
   public closeNav = () => {
-      const mySidenav: HTMLElement | null= document.getElementById("mySidenav"); 
-      if (mySidenav === null) {return};
+    const mySidenav: HTMLElement | null= document.getElementById("mySidenav"); 
+    if (mySidenav === null) {return};
 
-      mySidenav.style.width = "0px";
+    mySidenav.style.width = "0px";
   };
 
   public render() {
     return (
       <body>
+  
         <div id="mySidenav" className="Sidenav">
           <button className="Closenav" onClick={this.closeNav}>×</button>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+          <a href="#">Decks</a>
+          <a href="#">Add Card</a>
+          <a href="#">Whats webdev</a>
+          <a href="#">Options</a>
         </div>
 
         <div className="App">
@@ -42,8 +48,13 @@ class App extends React.Component {
             
           </header>
           <br /> <br />
+
           <Description />
+          <Footer />
         </div>
+        
+        
+        
       </body>
     );
   }

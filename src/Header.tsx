@@ -5,6 +5,7 @@ interface IProps {
   name?: string;
 }
 
+// its really only the deck name. not even the layout
 const Header: React.SFC<IProps> = (props: IProps) => (
   <h3>{props.name}</h3>
 );

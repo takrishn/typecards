@@ -1,15 +1,19 @@
 import * as React from 'react';
+import {openFooter} from './Footer'
+// import Slide from 'react-reveal/Slide';
 
 // these are the cards in the body
 class Description extends React.Component {
 
-  // animation for the answer cards to slide down
-  
+  public openFooterOnClick = () => {
+    // makes footer appear on click
+    openFooter();
+  };
 
   public render() {
     return (
       <div>
-        <a href="#nav"><div className="Boxed">
+        <a href="#nav" onClick={this.openFooterOnClick}><div className="Boxed">
           <p>Question</p>
         </div></a>
 
@@ -26,7 +30,6 @@ class Description extends React.Component {
             <p>Answer</p>
           </div>
         </div>
-        
       </div>
     );
   }

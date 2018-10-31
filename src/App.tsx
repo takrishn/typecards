@@ -1,10 +1,9 @@
 import * as React from 'react';
 import './App.css';
-import Description from './Description';
-import Footer from './Footer';
-import Header from './Header';
-import SideNav from './Sidenav';
-import {openNav} from './Sidenav';
+import Description from './components/Description';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import SideNav, {openNav} from './components/Sidenav';
 
 
 class App extends React.Component {

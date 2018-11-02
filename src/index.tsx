@@ -1,11 +1,15 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
-import registerServiceWorker from './registerServiceWorker';
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+
+import Header from './components/Header';
+import App from "./components/Deck";
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root') as HTMLElement
+    <Header name="deckhello" />,
+    document.getElementById("headerbar")
 );
-registerServiceWorker();
+
+ReactDOM.render(
+    <App />,
+    document.getElementById("deckpage")
+);

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {openFooter} from './Footer'
-// import Slide from 'react-reveal/Slide';
 
 // these are the cards in the body
 class Description extends React.Component {

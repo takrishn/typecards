@@ -1,34 +1,24 @@
 {
-  "name": "typecards",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@types/react-sidebar": "^3.0.0",
-    "jquery": "^3.3.1",
-    "nativescript-effects": "^1.0.0",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-reveal": "^1.2.2",
-    "react-scripts-ts": "3.1.0",
-    "react-side-nav": "^1.1.1",
-    "react-sidebar": "^3.0.2",
-    "react-sidenav": "^3.1.1",
-    "styled-components": "^4.0.2"
-  },
+  "name": "typecardsweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "@types/jest": "^23.3.5",
-    "@types/jquery": "^3.3.19",
-    "@types/node": "^10.12.0",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
     "@types/react": "^16.4.18",
     "@types/react-dom": "^16.0.9",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  },
+  "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
+    "css-loader": "^1.0.1",
     "source-map-loader": "^0.2.4",
-    "typescript": "^3.1.4"
+    "style-loader": "^0.23.1",
+    "typescript": "^3.1.5"
   }
 }

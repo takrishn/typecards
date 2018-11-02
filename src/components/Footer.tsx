@@ -1,5 +1,6 @@
 import * as React from 'react';
-// var tnsfx = require('nativescript-effects');
+// the footer appears after the answer card is revealed to the user
+// prompting the user for the difficulty rating
 
 // names are names of buttons
 interface IProps {

@@ -1,18 +1,14 @@
 import * as React from 'react';
-import '../stylesheets/App.css';
-import Description from './Description';
-import Footer from './Footer';
-import SideNav, {openNav} from './Sidenav';
+import '../stylesheets/Deck.css';
+import Description from './Deck_description';
+import Footer from './Deck_footer';
+import SideNav from './Sidenav';
 // this is the deck page where the flash cards are displayed
-// Deck.tsx is made up of the description (the cards) and the
-// footer (the prompt after you reveal the answer)
+// Deck.tsx is made up of the description (the cards), the
+// footer (the prompt after you reveal the answer), and the
+// side navigation menu
 
 class App extends React.Component {
-
-  public openNavOnClick = () => {
-    // makes SideNav appear on click
-    openNav();
-  };
 
   public render() {
     return (

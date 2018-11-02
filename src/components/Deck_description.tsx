@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {openFooter} from './Footer'
+import {openFooter} from './Deck_footer'
 
 // these are the cards in the body
 class Description extends React.Component {
@@ -11,7 +11,7 @@ class Description extends React.Component {
 
   public render() {
     return (
-      <div>
+      <div className="App-description">
         <a href="#nav" onClick={this.openFooterOnClick}><div className="Boxed">
           <p>Question</p>
         </div></a>

@@ -28,7 +28,7 @@ class SideNav extends React.Component {
 
     public render() {
       return (
-        <div id="mySidenav" className="Sidenav">
+        <div id="mySidenav" className="App-sidenav">
           <button className="Closenav" onClick={this.closeNavOnClick}>×</button>
           <a href="#">Decks</a>
           <a href="#">Add Card</a>

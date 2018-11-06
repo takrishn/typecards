@@ -2,7 +2,8 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 
 import Header from './components/Header';
-import App from "./components/Deckselection"
+import SelectionMenu from "./components/Deckselection"
+import SideNav from "./components/Sidenav";
 
 ReactDOM.render(
     <Header name="deckhello" />,
@@ -10,8 +11,13 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-    <App />,
-    document.getElementById("deckpage")
+    <SideNav />,
+    document.getElementById("sidenavbar")
+);
+
+ReactDOM.render(
+    <SelectionMenu />,
+    document.getElementById("pagecontent")
 );
 
 /*

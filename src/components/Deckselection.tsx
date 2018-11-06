@@ -1,33 +1,57 @@
 import * as React from 'react';
-import '../stylesheets/Deckselection.css';
-import SelectionMenu from './Deckselection_menu';
-import SideNav, {openNav} from './Sidenav';
+import '../stylesheets/App.css';
 
-// this is the deck selection page where you choose a deck
-// you want to study. 
+// this is the page where you can select a deck from.
+
+var acc = document.getElementsByClassName("Accordion");
+var i;
 
 
+class SelectionMenu extends React.Component {
+    constructor(props: Readonly<{}>){
+        super(props);
+        this.listenForAccordion = this.listenForAccordion.bind(this);
+    }
 
-class App extends React.Component {
+    // opens and closes the accordian menu 
+    public listenForAccordion(): void {
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+                } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+    }
+    
+    public render() {
+        return (
+        <div className="App-selectionmenu">
+        <br /> <br />
+            <div className="Selectionmenu">
+                <button className="Accordion" onClick={this.listenForAccordion}>Section 1</button>
+                <div className="Panel">
+                <p>Lorem ipsum...</p>
+                </div>
 
-  public openNavOnClick = () => {
-    // makes SideNav appear on click
-    openNav();
-  };
+                <button className="Accordion" onClick={this.listenForAccordion}>Section 2</button>
+                <div className="Panel">
+                <p>Lorem ipsum...</p>
+                </div>
 
-  public render() {
-    return (
-      <body>
-        <SideNav />
+                <button className="Accordion" onClick={this.listenForAccordion}>Section 3</button>
+                <div className="Panel">
+                <p>Lorem ipsum...</p>
+                </div>
 
-        <div className="App">
-          <br /> <br />
-          <SelectionMenu />
+            </div>
         </div>
-        
-      </body>
-    );
-  }
+        );
+    }
 }
 
-export default App;
+export default SelectionMenu;

@@ -1,4 +1,6 @@
 import * as React from 'react';
+
+// the footer for the Deck.tsx page
 // the footer appears after the answer card is revealed to the user
 // prompting the user for the difficulty rating
 

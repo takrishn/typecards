@@ -182,7 +182,12 @@ a {
   transition: 0.4s;
 }
 
-.active, .Accordion:hover {
+.Accordion:hover {
+  background-color: black;
+  color: white;
+}
+
+.active {
   background-color: #222;
   color: white;
 }

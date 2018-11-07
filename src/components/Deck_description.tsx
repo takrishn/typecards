@@ -1,7 +1,9 @@
 import * as React from 'react';
 import {openFooter} from './Deck_footer'
 
+// the body of the Deck.tsx page
 // these are the cards in the body
+
 class Description extends React.Component {
 
   public openFooterOnClick = () => {

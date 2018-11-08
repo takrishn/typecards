@@ -1,22 +1,18 @@
 import * as React from 'react';
-import '../stylesheets/App.css';
 
 // this is the page where you can select a deck from.
 
 var acc = document.getElementsByClassName("Accordion");
 var i;
 
-
-class SelectionMenu extends React.Component {
-    constructor(props: Readonly<{}>){
-        super(props);
-        this.listenForAccordion = this.listenForAccordion.bind(this);
-    }
+class DeckSelection extends React.Component {
 
     // opens and closes the accordian menu 
     public listenForAccordion(): void {
+        // add an event listener for each accordion object
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
+                // what happens on click: the panel opens and is marked active
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight){
@@ -54,4 +50,4 @@ class SelectionMenu extends React.Component {
     }
 }
 
-export default SelectionMenu;
+export default DeckSelection;

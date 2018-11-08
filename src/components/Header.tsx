@@ -2,6 +2,8 @@ import * as React from 'react';
 import {openNav} from './Sidenav';
 
 // name that appears on the top bar of the webpage
+// it also has the button that opens the sidebar naviation
+
 interface IProps {
   name?: string;
 }

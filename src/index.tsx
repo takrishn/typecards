@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Header from './components/Header';
-import SelectionMenu from "./components/Deckselection"
-import SideNav from "./components/Sidenav";
+import App from "./components/App";
 
 ReactDOM.render(
     <Header name="deckhello" />,
@@ -11,25 +11,8 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-    <SideNav />,
-    document.getElementById("sidenavbar")
-);
-
-ReactDOM.render(
-    <SelectionMenu />,
+    <Router>
+        <App />
+    </Router>,
     document.getElementById("pagecontent")
 );
-
-/*
-import App from "./components/Deck";
-
-ReactDOM.render(
-    <Header name="deckhello" />,
-    document.getElementById("headerbar")
-);
-
-ReactDOM.render(
-    <App />,
-    document.getElementById("deckpage")
-);
-*/

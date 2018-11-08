@@ -1,6 +1,9 @@
 import * as React from 'react';
+import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 
-// open side bar
+// open side bar menu
+
+// open the side bar
 export function openNav(){
     const mySidenav: HTMLElement | null= document.getElementById("mySidenav"); 
     // mySidenav "might return null" -rolls eyes-
@@ -9,7 +12,7 @@ export function openNav(){
     mySidenav.style.width = "250px";
 };
 
-  // close side bar
+// close side bar
 export function closeNav() {
     const mySidenav: HTMLElement | null= document.getElementById("mySidenav"); 
     if (mySidenav === null) {return};
@@ -19,22 +22,24 @@ export function closeNav() {
 
 class SideNav extends React.Component {
     
-    // openNavOnClick is found in App.tsx
+    // openNavOnClick is found in Header.tsx
 
     public closeNavOnClick = () => {
-        // makes SideNav appear on click
+        // makes SideNav close on click
         closeNav();
     };
 
     public render() {
       return (
-        <div id="mySidenav" className="App-sidenav">
-          <button className="Closenav" onClick={this.closeNavOnClick}>×</button>
-          <a href="#">Decks</a>
-          <a href="#">Add Card</a>
-          <a href="#">Whats webdev</a>
-          <a href="#">Options</a>
-        </div>
+        <Router>
+          <div id="mySidenav" className="App-sidenav">
+            <button className="Closenav" onClick={this.closeNavOnClick}>×</button>
+            <NavLink to="/">Decks</NavLink>
+            <NavLink to="/addcard">Add Card</NavLink>
+            <NavLink to="/deck">Temp Link</NavLink>
+            <NavLink to="/options">Options</NavLink>
+          </div>
+        </Router>
       );
     }
   }

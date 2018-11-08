@@ -1,5 +1,4 @@
 import * as React from 'react';
-import '../stylesheets/App.css';
 import Description from './Deck_description';
 import Footer from './Deck_footer';
 

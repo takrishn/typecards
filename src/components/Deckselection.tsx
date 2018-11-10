@@ -5,7 +5,7 @@ import * as React from 'react';
 var acc = document.getElementsByClassName("Accordion");
 var i;
 
-class DeckSelection extends React.Component {
+class DeckSelection extends React.Component{
 
     // opens and closes the accordian menu 
     public listenForAccordion(): void {

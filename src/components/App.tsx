@@ -1,18 +1,28 @@
 import * as React from 'react';
-import SideNav from "./Sidenav";
-import Main from './Main';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import '../stylesheets/App.css';
 
-//the page that renders everything
+import SideNav from "./Sidenav";
+import DeckSelection from "./Deckselection";
+import Deck from "./Deck";
+
+
+//the page that renders everything and chooses the path component
 
 class App extends React.Component {
 
     public render() {
       return (
-        <div>
-            <SideNav />
-            <Main />
-        </div>
+        <Router>
+          <div>
+              <SideNav />
+              <Switch>
+                <Route exact path='/' component={DeckSelection}/>
+                <Route path='/deck' component={Deck}/>
+              </Switch>
+          </div>
+        </Router>
       );
     }
   }

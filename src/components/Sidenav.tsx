@@ -20,7 +20,7 @@ export function closeNav() {
 };
 
 
-class SideNav extends React.Component {
+class SideNav extends React.PureComponent {
     
     // openNavOnClick is found in Header.tsx
 

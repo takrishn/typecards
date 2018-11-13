@@ -1,7 +1,11 @@
 import * as React from 'react';
 
-class DeckSelection extends React.Component{
+// this is the deck selection page. The landing page.
+// displays the decks you have and information on click
 
+class DeckSelection extends React.Component{
+    
+    // opens the accordion on click based on ID
     handleClick = (e:any) => {
         var acc = document.getElementById(e.target.id)
         acc.classList.toggle("active");

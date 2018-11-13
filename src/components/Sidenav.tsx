@@ -34,7 +34,7 @@ class SideNav extends React.PureComponent {
         <Router>
           <div id="mySidenav" className="App-sidenav">
             <button className="Closenav" onClick={this.closeNavOnClick}>×</button>
-            <NavLink to="/">Decks</NavLink>
+            <NavLink exact to="/">Decks</NavLink>
             <NavLink to="/addcard">Add Card</NavLink>
             <NavLink to="/deck">Temp Link</NavLink>
             <NavLink to="/options">Options</NavLink>

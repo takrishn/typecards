@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter as Router, NavLink } from 'react-router-dom';
+import { HashRouter as Router, NavLink } from 'react-router-dom';
 
 // open side bar menu
 
@@ -24,7 +24,7 @@ class SideNav extends React.PureComponent {
     
     // openNavOnClick is found in Header.tsx
 
-    public closeNavOnClick = () => {
+    private closeNavOnClick = () => {
         // makes SideNav close on click
         closeNav();
     };

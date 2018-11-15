@@ -131,6 +131,7 @@ a {
   text-align: center;
   text-decoration: none;
   font-size: 13px;
+  cursor: pointer;
 }
 
 .Footerbutton:hover {
@@ -144,12 +145,16 @@ a {
   padding-bottom: 100px;
 }
 
-.Boxed {
+.Boxed, .Boxedclickable {
   background-color: white;
   width: 460px;
   border: 0px;
   padding: 15px;
   margin: 20px auto;
+}
+
+.Boxedclickable {
+  cursor: pointer;
 }
 
 .Expandable {
@@ -164,6 +169,64 @@ a {
   padding-bottom: 100px;
 }
 
+.SearchBar {
+  background-image: url('../images/search.png');
+  background-position: 10px 9px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  width: 30vw;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid lightgrey;
+  margin-bottom: 12px; 
+}
+
+.Paneltable {
+  margin: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+td {
+  width: auto;
+}
+
+.Editbutton, .Studybutton {
+  float:right;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px 32px;
+}
+
+.Studybutton {
+  background-color: white;
+  color: black;
+  border: 1px solid darkgrey;
+}
+
+.Editbutton {
+  background-color: #222;
+  color: white;
+  border: none;
+  margin: 10px;
+}
+
+.Studybutton:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.Editbutton:hover {
+  background-color: white;
+  color: black;
+  display: inline-block;
+}
+
 .Accordion {
   background-color: white;
   color: #222;
@@ -173,8 +236,10 @@ a {
   width: 55vw;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 16px;
   transition: 0.4s;
+  display: inline-block;
+  margin: auto;
 }
 
 .Accordion:hover {

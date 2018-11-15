@@ -25,7 +25,7 @@ class Description extends React.Component {
   public render() {
     return (
       <div className="App-description">
-        <a onClick={this.openOnClick}><div className="Boxed">
+        <a onClick={this.openOnClick}><div className="Boxedclickable">
           <p>Question</p>
         </div></a>
 

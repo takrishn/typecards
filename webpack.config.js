@@ -5,7 +5,7 @@ module.exports = {
         path: __dirname + "/dist"
     },
 
-    // watch: true,
+    watch: true,
 
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
@@ -24,7 +24,12 @@ module.exports = {
             { test: /\.css$/, use: ['style-loader', 'css-loader']},
 
             // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+            { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
+
+            // 'png' files
+            { test: /\.png$/, use: [{loader: 'url-loader', options: {limit:25000,}}]}
+
+           
         ]
     },
 
